@@ -1,0 +1,29 @@
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<div id="container">
+    <div id="game">
+        
+    </div>
+</div>
+
+
+
+<center>
+    <input type="text" id="input">
+</center>
+
+<script src="bundle.js"></script>
+
+<script>
+    /* global METGE */
+    var input = document.getElementById("input")
+    METGE.setOutputElement(document.getElementById("game"))
+    METGE.start()
+    input.addEventListener("keypress", function(event) {
+        if (event.keyCode == 13) {
+            METGE.input(input.value)
+            input.value = ""
+            
+        }
+    })
+</script>

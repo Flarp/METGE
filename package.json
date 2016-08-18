@@ -1,0 +1,25 @@
+{
+  "name": "metge",
+  "version": "0.0.1",
+  "description": "A text-based game adventure API",
+  "main": "textual-intercourse.js",
+  "dependencies": {
+    "require-dir": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "happypack": "^2.2.1",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Flarp",
+  "license": "MIT",
+  "keywords": [
+    "text-based-game"
+  ]
+}
