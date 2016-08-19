@@ -23,6 +23,10 @@ let go = function(arr) {
 
 let Main = new METGE.game.Room({ description: "You seem to be trapped in a dungeon. In front of you is a door." })
 
+let name = function(oldVar, newVar) {
+    METGE.output(`Greetings, ${newVar}.`)
+}
+
 let currentRoom = function(oldVar, newVar) {
     
         METGE.output(newVar.description)
@@ -34,7 +38,7 @@ let my = function(arr) {
         if (state.name) {
             METGE.output("I already know who you are!")
         } else {
-            state.name = arr[2]
+            state.name = arr.slice(2, arr.length).join(" ")
             state.currentRoom = METGE.game.rooms.Main
         }
         
@@ -54,5 +58,6 @@ module.exports = {
         },
     stateChange: {
         currentRoom: currentRoom,
+        name: name
     }
 }

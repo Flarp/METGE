@@ -9,3 +9,7 @@ METGE.start = function() {
     METGE.output("What is your name? Enter it in the format \"My name is {name}\"")
 }
 
+if (typeof window == "undefined") {
+    METGE.start()
+}
+
