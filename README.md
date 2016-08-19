@@ -235,7 +235,7 @@ module.exports = {
 
 ```
 
-Just like commands, the name of the changed state key must correspond to the name of the function. So ```hasSpoken()``` is invoked when something in the state changed.
+Just like commands, the name of the changed state key must correspond to the name of the function. So ```hasSpoken()``` is invoked when the ```hasSpoken``` property in the state changed.
 
 Right now though, the state isn't ever changed, even if the user talks. We can change that by changing a value in the state as you would any other object in JavaScript.
 
